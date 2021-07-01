@@ -1,4 +1,6 @@
 body {
+  font-size: 16px;
+  background-color: #28222B;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +12,74 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  background-color: #28222B;
+  font-size: 16px;
+  line-height: 1;
+  color: #F1F0EE;
+}
+
+h1, h2, h3 {
+  color: #DC3540;
+  margin: 0px !important;
+  margin-bottom: 10px !important;
+}
+
+.ui.segment {
+  background-color: #F1F0EE !important;
+  border: none !important;
+}
+
+.ui.segment h1 {
+  text-align: center;
+}
+
+.ui.tabular.menu {
+  border: none !important;
+}
+
+.ui.tabular.menu .item {
+  color: #28222B;
+  position: relative;
+}
+
+.ui.tabular.menu .item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 4px;
+  background-color: #DC3540;
+  transition: 0.2s ease-in-out;
+  height: 0px;
+  bottom: 5px;
+  left: 0;
+}
+
+.ui.tabular.menu .item {
+  font-size: 16px;
+  color: #28222B;
+}
+
+.ui.tabular.menu .item:hover:after {
+  height: 70%;
+}
+
+.algo-steps img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.ui.attached.tabular.menu {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .algo-steps img {
+    width: 80%;
+  }
 }

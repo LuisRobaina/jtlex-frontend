@@ -6,6 +6,7 @@ import { Input, Form, Segment, TextArea, Menu } from "semantic-ui-react";
 import JTLEXSteps from '../components/JTLEXSteps'
 import FromJSONGraph from '../components/FromJSONGraph'
 import Upload from '../components/upload/Upload'
+import About from '../components/About'
 
 const Home = () => {
 
@@ -130,7 +131,7 @@ const Home = () => {
             )}
             {activeItem === "About" && (
                 <>
-                    <JTLEXSteps></JTLEXSteps>
+                    <About></About>
                 </>
             )}
             {activeItem === "Time ML" && (
@@ -143,4 +144,4 @@ const Home = () => {
     );
 }
 
-export default Home; 
+export default Home;
